@@ -1,0 +1,24 @@
+<html>
+    <head>sasuka</head>
+    <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <body>
+        <a href="{% url 'add1' 5 1 %}">++</a>
+        <ul>
+            {% for athlete in athlete_list %}
+            <li>{{ athlete }}</li>
+            {% endfor %}
+
+            {% for athlete in ath_list %}
+            <li>{{ athlete.name }}</li>
+            {% endfor %}
+        </ul>
+        <ul>
+                <script type="text/javascript">
+                    var list = {{ arry|safe }};
+                    alert(list)
+                    
+                </script>
+        </ul>
+    </body>
+</html>

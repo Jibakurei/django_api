@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form action="/" method="POST" class="post-form">{% csrf_token %}
+        <input type="text" name="btitile" />
+        <input type="text" name="bread" />
+        <input type="text" name="bcomment" />
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
